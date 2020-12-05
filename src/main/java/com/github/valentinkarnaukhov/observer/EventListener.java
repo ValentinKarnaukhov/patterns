@@ -5,6 +5,11 @@ package com.github.valentinkarnaukhov.observer;
  */
 public interface EventListener {
 
-    void notify(Object data);
+    void update(EventType eventType);
+
+    enum EventType{
+        COMMIT,
+        OTHER
+    }
 
 }
